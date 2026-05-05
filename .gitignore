@@ -3,6 +3,8 @@
 03_instructional_team/lessons/pdf/*
 03_instructional_team/lessons/html/*
 
+LICENSE
+
 # local node modules
 node_modules/
 package-lock.json
@@ -13,7 +15,7 @@ package.json
 02_activities/assignments/*
 
 # Un-ignore the specific files
-!02_activities/assignments/assignment.sh
+a!02_activities/assignments/assignment.sh
 !02_activities/assignments/github_actions.png
 !02_activities/assignments/assignment_instructions.md
 
