@@ -36,7 +36,7 @@ mkdir data
 mv raw./rawdata ./data/raw
 
 # 3. List the contents of the ./data/raw directory
-ls ./data/raw
+ls ./data/raw/
 
 # 4. Create the directory ./data/processed, 
 #    then create the following sub-directories within it: server_logs, user_logs, and event_logs
@@ -51,8 +51,8 @@ cp ./data/raw/*event*.log ./data/processed/event_logs
 
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 cd ..
-rm ./data/raw/*ipaddr*
-rm ./data/processed/user_logs/*ipaddr*
+rm ./data/raw/*ipaddr*.*
+rm ./data/processed/user_logs/*ipaddr*.*
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 ls ./data/processed/* > inventory.txt
